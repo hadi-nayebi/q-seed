@@ -5,11 +5,6 @@
 .qwen/QWEN.local.md
 .qwen/settings.local.json
 
-# Local dependencies and generated reports
-node_modules/
-coverage/
-.cache/
-
 # Operating-system and editor residue
 .DS_Store
 Thumbs.db

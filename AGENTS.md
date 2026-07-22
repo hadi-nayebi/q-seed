@@ -66,6 +66,28 @@ approval to land framework code.
 - Preserve a clean pinned baseline so inherited Qwen behavior remains
   distinguishable from Q-Seed changes.
 
+## Root directory budget
+
+The public repository currently has exactly three owned top-level directory
+compartments:
+
+- `.qwen/` for the shipped cognitive/plugin brain;
+- `qwen-code/` for the independently versioned framework submodule; and
+- `.github/` for GitHub-specific collaboration and CI metadata.
+
+Do not create generic root `scripts/`, `tools/`, `.dev/`, `.local/`, `state/`,
+`runtime/`, or `tests/` buckets. User- or machine-local state is ignored and
+stored by its owning mechanism. Plugin tests stay with their plugin; framework
+tests stay in `qwen-code/`; job verification stays with its job. A future root
+`tests/` may be created only for a real cross-layer integration suite that has
+no narrower owner. A future `docs/` must likewise be earned by durable public
+engineering material that belongs neither in the README nor in canonical
+Q-Seed context.
+
+Adding any top-level directory is an architectural topology change. It
+requires an explicit role, evidence that no existing compartment owns that
+role, a defined authority boundary, and maintainer alignment before creation.
+
 ## Current boundary
 
 Q-Seed is in the Foundation stage. Do not begin broad feature translation

@@ -20,6 +20,15 @@ jobs:
         with:
           node-version: 22
       - name: Validate repository boundaries
-        run: node tests/composition/foundation.mjs
+        shell: bash
+        run: |
+          test -z "$(git ls-files .codex)"
+          test "$(git ls-tree HEAD qwen-code | awk '{print $1}')" = "160000"
+          grep -Fxq '@.qwen/QWEN.md' QWEN.md
+          node --input-type=module -e '
+            import { readFileSync } from "node:fs";
+            const settings = JSON.parse(readFileSync(".qwen/settings.json", "utf8"));
+            if (settings?.context?.fileName !== "QWEN.md") process.exit(1);
+          '
       - name: Verify framework identity
         run: node qwen-code/scripts/cli-entry.js --version
