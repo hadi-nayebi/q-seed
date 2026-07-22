@@ -28,9 +28,9 @@ and selects the first narrow end-to-end feature.
 
 ```text
 Q-Seed
-├── .qwen/       cognitive/plugin brain
-├── qwen-code/   user-controlled framework fork
-└── jobs         fluid user–Q-Seed experience, introduced when specified
+├── .qwen/             cognitive/plugin brain
+│   └── jobs/          fluid user–Q-Seed experience, when specified
+└── qwen-code/         user-controlled framework fork
 ```
 
 The active model animates the whole organism but is not its identity.
@@ -118,9 +118,9 @@ separate intentional act after the framework revision is approved.
 - [`SECURITY.md`](SECURITY.md) — private vulnerability reporting.
 
 The root directory budget is deliberately finite: `.qwen/`, `qwen-code/`, and
-`.github/`. New top-level directories require an explicit unowned role and an
-approved topology decision; local state and organ-specific tests stay with
-their owner.
+`.github/`. New top-level directories require a distinct enduring role that no
+existing compartment owns, plus an approved topology decision; local state and
+organ-specific tests stay with their owner.
 
 ## Contributing
 
