@@ -1,0 +1,46 @@
+name: Feature proposal
+description: Propose a Q-Seed behavior or architectural capability
+title: "proposal: "
+labels:
+  - proposal
+body:
+  - type: textarea
+    id: promise
+    attributes:
+      label: User-visible promise
+      description: What should Q-Seed make possible or guarantee?
+    validations:
+      required: true
+  - type: textarea
+    id: role
+    attributes:
+      label: Cognitive role and boundary
+      description: Why does the organism need this, and what must it not absorb?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and failure modes
+      description: Describe current behavior, prior evidence, and known risks.
+    validations:
+      required: true
+  - type: dropdown
+    id: placement
+    attributes:
+      label: Candidate placement
+      options:
+        - Undecided
+        - Qwen framework
+        - Cognitive/plugin brain
+        - Job experience
+        - Mixed realization
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance evidence
+      description: How could the intended behavior be tested and demonstrated?
+    validations:
+      required: true

@@ -1,0 +1,25 @@
+name: Foundation validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Q-Seed and framework
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate repository boundaries
+        run: node scripts/validate-foundation.mjs
+      - name: Verify framework identity
+        run: node qwen-code/scripts/cli-entry.js --version

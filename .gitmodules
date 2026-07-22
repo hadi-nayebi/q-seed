@@ -1,0 +1,3 @@
+[submodule "qwen-code"]
+	path = qwen-code
+	url = https://github.com/hadi-nayebi/qwen-code.git
