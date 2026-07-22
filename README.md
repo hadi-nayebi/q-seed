@@ -71,7 +71,7 @@ Requirements: Git and Node.js 22 or newer.
 ```bash
 git clone --recurse-submodules https://github.com/hadi-nayebi/q-seed.git
 cd q-seed
-node scripts/validate-foundation.mjs
+node tests/composition/foundation.mjs
 node qwen-code/scripts/cli-entry.js --version
 ```
 
@@ -114,6 +114,7 @@ separate intentional act after the framework revision is approved.
 - [`.qwen/QWEN.md`](.qwen/QWEN.md) — permanent brain contract and router.
 - [`.qwen/context/`](.qwen/context/) — canonical shared language.
 - [`qwen-code/`](qwen-code/) — pinned framework fork.
+- [`tests/composition/foundation.mjs`](tests/composition/foundation.mjs) — executable repository-composition contract.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution and repository-boundary workflow.
 - [`SECURITY.md`](SECURITY.md) — private vulnerability reporting.
 

@@ -37,7 +37,7 @@ not a transplant source.
 2. Consolidate approved terminology in the owning context file when needed.
 3. Add the narrowest meaningful test or validation first.
 4. Implement only the approved scope.
-5. Run `node scripts/validate-foundation.mjs` and all affected tests.
+5. Run `node tests/composition/foundation.mjs` and all affected tests.
 6. Review the owning repository's complete diff.
 7. Commit a coherent unit and open a pull request describing boundaries,
    risks, verification, and recovery.

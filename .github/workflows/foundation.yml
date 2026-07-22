@@ -20,6 +20,6 @@ jobs:
         with:
           node-version: 22
       - name: Validate repository boundaries
-        run: node scripts/validate-foundation.mjs
+        run: node tests/composition/foundation.mjs
       - name: Verify framework identity
         run: node qwen-code/scripts/cli-entry.js --version
