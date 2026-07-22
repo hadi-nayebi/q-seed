@@ -8,9 +8,18 @@
 # Operating-system and editor residue
 .DS_Store
 Thumbs.db
+.idea/
 *~
 *.swp
 *.swo
+*.orig
+*.rej
+
+# Repository-local Git worktrees
+.worktrees/
+
+# Local environment managers
+.direnv/
 
 # Local secrets; keep a documented example when one is introduced
 .env
