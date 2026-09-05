@@ -2,11 +2,11 @@
 
 [![Foundation validation](https://github.com/hadi-nayebi/q-seed/actions/workflows/foundation.yml/badge.svg)](https://github.com/hadi-nayebi/q-seed/actions/workflows/foundation.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-foundation-orange.svg)](#project-status)
+[![Purpose](https://img.shields.io/badge/purpose-pattern%20accumulation-blue.svg)](#project-status)
 
-Q-Seed is an open-source, model-flexible agent harness built from two
-independently evolvable organs: an inspectable cognitive brain under `.qwen/`
-and a user-controlled fork of Qwen Code under `qwen-code/`.
+Q-Seed is Hadosh Academy's public pattern-accumulation repository for harnesses
+using Qwen Code. Its reference composition separates inspectable cognitive
+context under `.qwen/` from a user-controlled framework fork under `qwen-code/`.
 
 The project learns from the behavior and failures of an earlier Seed Agent
 prototype, but it is not a code port. Each capability is understood, defined
@@ -15,10 +15,15 @@ tested, and implemented anew.
 
 ## Project status
 
-Q-Seed is in its **Foundation** stage and is not ready for general use. The
-repository currently establishes the organism's identity, layer boundaries,
-authority model, and reproducible Qwen Code baseline. Broad feature
-translation has intentionally not begun.
+The repository is deliberately sparse: it currently establishes architectural
+context, layer boundaries, authority, and a reproducible Qwen Code baseline.
+The [Academy writings](https://hadi-nayebi.github.io/blog.html) supply task- and
+framework-agnostic principles. Community implementation evidence can lead to
+selectively reusable components here; it does not prescribe a standard harness.
+
+Each user and their agent may adapt those components or build entirely from
+the writings. Planned cognitive capabilities remain distinct from implemented
+framework behavior.
 
 The next engineering work maps Qwen's interception surfaces, specifies local
 working-memory behavior, assesses prototype capabilities by cognitive role,
@@ -59,8 +64,9 @@ Qwen Code as a submodule provides:
 - a path for users to remain on the maintained fork or evolve a personal
   descendant.
 
-The pinned baseline is Qwen Code `v0.19.10` at
-`095bd160918086a3a33192133e7923635f08f973`. Q-Seed-specific framework work
+The current pin is the reviewed Qwen Code `v0.21.7` integration at
+`b3784681d129c8d3d237625d42870802d29e00a2`. The original `v0.19.10`
+baseline is historical provenance, not the current checkout. Q-Seed-specific framework work
 will use the public [`hadi-nayebi/qwen-code`](https://github.com/hadi-nayebi/qwen-code)
 fork and remain distinguishable from upstream behavior.
 
@@ -75,7 +81,7 @@ git submodule status
 node qwen-code/scripts/cli-entry.js --version
 ```
 
-The expected CLI version at this stage is `0.19.10`. This verifies the pinned
+The expected CLI version is `0.21.7`. This verifies the pinned
 framework; it does not imply that the planned Q-Seed cognitive features have
 already been implemented.
 
