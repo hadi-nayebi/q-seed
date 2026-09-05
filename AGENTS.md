@@ -4,6 +4,11 @@ This repository is the public development home and reproducible composition
 for Q-Seed. These instructions govern builders working in the Q-Seed
 repository; they are not Q-Seed runtime instructions.
 
+The public repository accumulates Qwen-specific context and selectively reusable
+building blocks as community evidence supports them. Users and their agents may
+adapt components or build from the Academy writings alone. Preserve this role;
+do not treat sparseness as a defect or prescribe one standard installable harness.
+
 ## Repository organs
 
 - `.qwen/` is the shipped cognitive/plugin brain.
@@ -90,6 +95,6 @@ role, a defined authority boundary, and maintainer alignment before creation.
 
 ## Current boundary
 
-Q-Seed is in the Foundation stage. Do not begin broad feature translation
+Current contents are architectural context and a pinned framework. Do not begin broad feature translation
 until the interception map, memory contract, behavior migration matrix, and
 first vertical-slice acceptance criteria are complete.

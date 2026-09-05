@@ -1,8 +1,8 @@
 # Contributing to Q-Seed
 
-Q-Seed is currently in its Foundation stage. Contributions are welcome, but
-architectural clarity and executable evidence take priority over feature
-volume.
+Q-Seed accumulates Qwen-specific context and selectively reusable components
+for distinct user harnesses. Community experience, architectural clarity and
+executable evidence guide what belongs here; feature volume is not a goal.
 
 Read the [Hadosh Academy contribution guide](https://hadi-nayebi.github.io/CONTRIBUTING.md) for the
 shared comment-to-field-report-to-issue-to-pull-request maturation path. Use the
