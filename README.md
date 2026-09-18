@@ -65,7 +65,7 @@ Qwen Code as a submodule provides:
   descendant.
 
 The current pin is the reviewed Qwen Code `v0.21.7` integration at
-`b3784681d129c8d3d237625d42870802d29e00a2`. The original `v0.19.10`
+`83557732af79bc5360b24102c0e6d264ddc31ab7`. The original `v0.19.10`
 baseline is historical provenance, not the current checkout. Q-Seed-specific framework work
 will use the public [`hadi-nayebi/qwen-code`](https://github.com/hadi-nayebi/qwen-code)
 fork and remain distinguishable from upstream behavior.
