@@ -30,5 +30,7 @@ jobs:
             const settings = JSON.parse(readFileSync(".qwen/settings.json", "utf8"));
             if (settings?.context?.fileName !== "QWEN.md") process.exit(1);
           '
-      - name: Verify framework identity
-        run: node qwen-code/scripts/cli-entry.js --version
+      - name: Test foundation identity validator
+        run: node --test .github/scripts/validate-foundation.test.mjs
+      - name: Verify declared framework identity
+        run: node .github/scripts/validate-foundation.mjs
